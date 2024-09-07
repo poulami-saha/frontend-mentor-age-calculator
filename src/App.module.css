@@ -16,7 +16,6 @@
   padding: 48px 24px;
   flex-direction: column;
   align-items: flex-start;
-  gap: 32px;
   border-radius: 24px 24px 100px 24px;
   background: var(--White, #fff);
 }
@@ -66,6 +65,15 @@
   margin-block: 8px;
   width: 40px;
   height: 30px;
+}
+input:last-child {
+  width: 60px;
+}
+
+input::placeholder {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 6px, 8px;
 }
 .image {
   display: flex;

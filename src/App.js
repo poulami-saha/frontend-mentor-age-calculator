@@ -179,6 +179,7 @@ function App() {
               type="number"
               className={styles.input}
               onChange={(e) => setDate("day", e.target.value)}
+              placeholder="DD"
             />
             {dateError.day && <p className={styles.error}>{dateError.day}</p>}
           </div>
@@ -194,6 +195,7 @@ function App() {
               type="number"
               className={styles.input}
               onChange={(e) => setDate("month", e.target.value)}
+              placeholder="MM"
             />
             {dateError.month && (
               <p className={styles.error}>{dateError.month}</p>
@@ -211,6 +213,7 @@ function App() {
               type="number"
               className={styles.input}
               onChange={(e) => setDate("year", e.target.value)}
+              placeholder="YYYY"
             />
             {dateError.year && <p className={styles.error}>{dateError.year}</p>}
           </div>
