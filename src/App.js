@@ -231,7 +231,7 @@ function App() {
                 <span className={styles.parallelogram}></span>
               </>
             )}{" "}
-            years
+            {age.year !== undefined && age.year > 1 ? "years" : "year"}
           </p>
           <p className={styles.result}>
             {age.month !== undefined ? (
@@ -242,7 +242,7 @@ function App() {
                 <span className={styles.parallelogram}></span>
               </>
             )}{" "}
-            months
+            {age.month !== undefined && age.month > 1 ? "months" : "month"}
           </p>
           <p className={styles.result}>
             {age.day !== undefined ? (
@@ -253,7 +253,7 @@ function App() {
                 <span className={styles.parallelogram}></span>
               </>
             )}{" "}
-            days
+            {age.day !== undefined && age.day > 1 ? "days" : "day"}
           </p>
         </div>
       </div>
